@@ -85,7 +85,7 @@
 		146AB1A9219D907100269B03 = {
 			isa = PBXGroup;
 			children = (
-				146AB1EE219DC2A400269B03 /* Location Tracker */,
+				146AB1EE219DC2A400269B03 /* LocationTracking */,
 				146AB1B4219D907100269B03 /* LocationTracker */,
 				146AB1CC219D907400269B03 /* LocationTrackerTests */,
 				146AB1D7219D907400269B03 /* LocationTrackerUITests */,
@@ -134,7 +134,7 @@
 			path = LocationTrackerUITests;
 			sourceTree = "<group>";
 		};
-		146AB1EE219DC2A400269B03 /* Location Tracker */ = {
+		146AB1EE219DC2A400269B03 /* LocationTracking */ = {
 			isa = PBXGroup;
 			children = (
 				146AB1E6219D90B200269B03 /* LocationTrackerViewController.swift */,
@@ -142,7 +142,7 @@
 				146AB1E8219D9A4100269B03 /* LocationTrackingInteractor.swift */,
 				146AB1EA219D9EED00269B03 /* LocationTrackingWorker.swift */,
 			);
-			path = "Location Tracker";
+			path = LocationTracking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
