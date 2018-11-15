@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		146AB1B6219D907100269B03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146AB1B5219D907100269B03 /* AppDelegate.swift */; };
-		146AB1B8219D907100269B03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146AB1B7219D907100269B03 /* ViewController.swift */; };
 		146AB1BB219D907100269B03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146AB1B9219D907100269B03 /* Main.storyboard */; };
 		146AB1BE219D907100269B03 /* LocationTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 146AB1BC219D907100269B03 /* LocationTracker.xcdatamodeld */; };
 		146AB1C0219D907300269B03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146AB1BF219D907300269B03 /* Assets.xcassets */; };
 		146AB1C3219D907300269B03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146AB1C1219D907300269B03 /* LaunchScreen.storyboard */; };
 		146AB1CE219D907400269B03 /* LocationTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146AB1CD219D907400269B03 /* LocationTrackerTests.swift */; };
 		146AB1D9219D907400269B03 /* LocationTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146AB1D8219D907400269B03 /* LocationTrackerUITests.swift */; };
+		146AB1E7219D90B200269B03 /* LocationTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146AB1E6219D90B200269B03 /* LocationTrackerViewController.swift */; };
+		146AB1E9219D9A4100269B03 /* LocationTrackingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146AB1E8219D9A4100269B03 /* LocationTrackingInteractor.swift */; };
+		146AB1EB219D9EED00269B03 /* LocationTrackingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146AB1EA219D9EED00269B03 /* LocationTrackingWorker.swift */; };
+		146AB1ED219DA24E00269B03 /* LocationTrackerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146AB1EC219DA24E00269B03 /* LocationTrackerPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		146AB1B2219D907100269B03 /* LocationTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		146AB1B5219D907100269B03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		146AB1B7219D907100269B03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		146AB1BA219D907100269B03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		146AB1BD219D907100269B03 /* LocationTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocationTracker.xcdatamodel; sourceTree = "<group>"; };
 		146AB1BF219D907300269B03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		146AB1D4219D907400269B03 /* LocationTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146AB1D8219D907400269B03 /* LocationTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackerUITests.swift; sourceTree = "<group>"; };
 		146AB1DA219D907400269B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		146AB1E6219D90B200269B03 /* LocationTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackerViewController.swift; sourceTree = "<group>"; };
+		146AB1E8219D9A4100269B03 /* LocationTrackingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackingInteractor.swift; sourceTree = "<group>"; };
+		146AB1EA219D9EED00269B03 /* LocationTrackingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackingWorker.swift; sourceTree = "<group>"; };
+		146AB1EC219DA24E00269B03 /* LocationTrackerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackerPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		146AB1A9219D907100269B03 = {
 			isa = PBXGroup;
 			children = (
+				146AB1EE219DC2A400269B03 /* Location Tracker */,
 				146AB1B4219D907100269B03 /* LocationTracker */,
 				146AB1CC219D907400269B03 /* LocationTrackerTests */,
 				146AB1D7219D907400269B03 /* LocationTrackerUITests */,
@@ -100,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				146AB1B5219D907100269B03 /* AppDelegate.swift */,
-				146AB1B7219D907100269B03 /* ViewController.swift */,
 				146AB1B9219D907100269B03 /* Main.storyboard */,
 				146AB1BF219D907300269B03 /* Assets.xcassets */,
 				146AB1C1219D907300269B03 /* LaunchScreen.storyboard */,
@@ -126,6 +132,17 @@
 				146AB1DA219D907400269B03 /* Info.plist */,
 			);
 			path = LocationTrackerUITests;
+			sourceTree = "<group>";
+		};
+		146AB1EE219DC2A400269B03 /* Location Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				146AB1E6219D90B200269B03 /* LocationTrackerViewController.swift */,
+				146AB1EC219DA24E00269B03 /* LocationTrackerPresenter.swift */,
+				146AB1E8219D9A4100269B03 /* LocationTrackingInteractor.swift */,
+				146AB1EA219D9EED00269B03 /* LocationTrackingWorker.swift */,
+			);
+			path = "Location Tracker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +213,11 @@
 				TargetAttributes = {
 					146AB1B1219D907100269B03 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					146AB1C8219D907400269B03 = {
 						CreatedOnToolsVersion = 10.1;
@@ -259,9 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				146AB1B8219D907100269B03 /* ViewController.swift in Sources */,
 				146AB1B6219D907100269B03 /* AppDelegate.swift in Sources */,
+				146AB1ED219DA24E00269B03 /* LocationTrackerPresenter.swift in Sources */,
+				146AB1E7219D90B200269B03 /* LocationTrackerViewController.swift in Sources */,
+				146AB1EB219D9EED00269B03 /* LocationTrackingWorker.swift in Sources */,
 				146AB1BE219D907100269B03 /* LocationTracker.xcdatamodeld in Sources */,
+				146AB1E9219D9A4100269B03 /* LocationTrackingInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
