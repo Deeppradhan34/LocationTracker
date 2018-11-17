@@ -18,5 +18,7 @@ class LocationTrackerWorker: NSObject, PostLocationTracker {
         // Use API to post data.
         let latStr = String(lat)
         let longSrr = String(long)
+        print("Long\(longSrr)")
+        print("Lat\(latStr)")
     }
 }
