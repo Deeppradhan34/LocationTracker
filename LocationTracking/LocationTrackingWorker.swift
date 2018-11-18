@@ -51,7 +51,11 @@ class LocationTrackerWorker: NSObject, PostLocationTracker {
             }
             if let result = response as? HTTPURLResponse {
                 print(result.statusCode)
-                print("success")
+                if (result.statusCode == 200) {
+                    print("Success")
+                } else {
+                    print("Failure")
+                }
             }
         }
         task.resume()
